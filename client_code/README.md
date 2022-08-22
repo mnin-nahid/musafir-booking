@@ -1,11 +1,3 @@
-# Welcome to [Musafir.com](https://github.com/mnin-nahid)
-
-#### Technology
-- create-react-app
-- React Router
-
-
-###### XXXXXXXXXXXXXXXXXXXXXXXborderXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ## Getting Started with Create React App
 
