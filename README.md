@@ -7,7 +7,7 @@
 - create-react-app
 - React Router
 - SASS with SCSS
-- fontawesome
+- Fontawesome
 - React Date Range
 - date-fns
 - Firebase & Firebase Hosting
