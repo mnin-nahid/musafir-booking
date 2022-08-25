@@ -159,10 +159,22 @@
 
 //mobile responsive
 @media screen and (max-width: 767px) {
+
+    .header.hotelsMode {
+        height: 250px;
+
+        .headerContainer {
+            height: 235px;
+        }
+
+    }
     .header {
         height: 420px;
 
+        
+
         .headerContainer {
+            height: 300px;
 
             .headerList {
                 display: flex;
@@ -225,6 +237,8 @@
                 }
             }
         }
+
+        
     }
 
 }
