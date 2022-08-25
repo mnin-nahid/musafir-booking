@@ -1,0 +1,49 @@
+.topHotelsContainer {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .topHotelsContainerItem {
+        flex: 1;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+
+        .topHotelsImg {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 20px;
+        }
+        .hotelName {
+            font-weight: bold;
+        }
+        .hotelCity {
+            font-weight: 300;
+        }
+        .hotelPrice {
+            font-weight: 500;
+        }
+        .hotelRating>button {
+            background-color: #003580;
+            color: white;
+            border: none;
+            padding: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .hotelRating>span {
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .topHotelsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

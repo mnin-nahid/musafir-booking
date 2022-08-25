@@ -6,10 +6,10 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import HeaderSearch from './HeaderSearch';
 import './index.scss';
 
-const Header = () => {
+const Header = ({type}) => {
 
     return (
-        <div className="header">
+        <div className={type === "hotels" ? "header hotelsMode" :  "header"}>
             <div className="headerContainer">
                 <div className="headerList">
                     <div className="headerListItem active">
@@ -33,14 +33,18 @@ const Header = () => {
                         <span>Airport taxis</span>
                     </div>
                 </div>
-                <div className='headerTitle'>
-                    <h1 className="headerText">Find your next stay</h1>
-                    <p className="headerDesc">Search low prices on hotels, homes and much more...</p>
-                </div>
-                <div className="searchContainer">
+                {
+                    type !== "hotels" &&
+                    <>
+                    <div className='headerTitle'>
+                        <h1 className="headerText">Find your next stay</h1>
+                        <p className="headerDesc">Search low prices on hotels, homes and much more...</p>
+                    </div>
+                    <div className="searchContainer">
 
-                    < HeaderSearch />
-                </div>
+                        < HeaderSearch />
+                    </div>
+                </>}
             </div>
         </div>
     )
