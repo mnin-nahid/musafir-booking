@@ -5,6 +5,7 @@ import Featured from "../../components/Featured";
 import Property from "../../components/Property";
 import TopHotels from "../../components/TopHotels";
 import EmailSubscription from "../../components/EmailSubscription";
+import Footer from "../../components/Footer";
 import './index.scss';
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         </h1>
         < TopHotels />
         < EmailSubscription />
+        < Footer />
 
       </div>
     </div>

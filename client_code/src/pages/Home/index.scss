@@ -1,3 +1,4 @@
+
 .homeContainer {
     margin-top: 50px;
     display: flex;
@@ -5,7 +6,7 @@
     align-items: center;
     gap: 30px;
     padding-top: 50px;
-    margin: 10px 10px;
+    // margin: 10px 10px;
 
     .homeTitle {
         width: 100%;
@@ -17,7 +18,7 @@
 //mobile responsive
 @media screen and (max-width: 767px) {
     .homeContainer {
-        margin: 10px 10px; 
+        margin: 0px 0px; 
         padding-top: 280px;
     }
 }
