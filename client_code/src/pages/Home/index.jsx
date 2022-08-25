@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar";
 import Featured from "../../components/Featured";
 import Property from "../../components/Property";
 import TopHotels from "../../components/TopHotels";
+import EmailSubscription from "../../components/EmailSubscription";
 import './index.scss';
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
           Top Rated Hotels
         </h1>
         < TopHotels />
+        < EmailSubscription />
 
       </div>
     </div>
