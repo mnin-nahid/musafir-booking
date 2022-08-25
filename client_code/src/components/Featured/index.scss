@@ -1,0 +1,40 @@
+.featured {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 5;
+
+    .featuredItem {
+        position: relative;
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 250px;
+
+        .featuredImg {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .featuredTitles {
+            position: absolute;
+            bottom: 0px;
+            padding-left: 10px;
+        }
+    }
+}
+
+//mobile responsive
+@media screen and (max-width: 767px) {
+    .featured {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .featuredItem {
+            color: #fff;
+        }
+    }
+}

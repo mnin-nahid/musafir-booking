@@ -100,6 +100,8 @@
                         position: absolute;
                         top: 50px;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        z-index: 10;
+
                     }
 
                     .headerSearchBtn {
@@ -121,6 +123,8 @@
                         border: 1px solid lightgray;
                         border-radius: 5px;
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        z-index: 10;
+
 
                         .optionItem {
                             width: 200px;
