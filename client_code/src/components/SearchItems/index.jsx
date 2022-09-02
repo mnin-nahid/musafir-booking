@@ -1,7 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./index.scss";
 
 const Index = () => {
+
+  const navigate = useNavigate();
+
+  const handleAvailability = () => {
+    navigate("/hotels/nahid")
+
+  }
   return (
     <div className='searchItem'>
       <img src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
@@ -16,7 +24,7 @@ const Index = () => {
           Studio Residential Hotel with air condition
         </span>
         <span className="searchItemFeatures">
-        1 large double bed
+          1 large double bed
         </span>
         <span className="searchItemCancelOption">
           Free Cancellation
@@ -36,7 +44,7 @@ const Index = () => {
         <div className="searchItemDetailTexts">
           <span className="SearchItemPrice">$445</span>
           <span className="SearchItemTaxOption">Includes taxes and fees.</span>
-          <button className="SearchItemCheckButton">See availability</button>
+          <button className="SearchItemCheckButton" onClick={handleAvailability}>See availability</button>
         </div>
 
       </div>
