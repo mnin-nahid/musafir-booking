@@ -1,0 +1,93 @@
+.hotelsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .hotelsWrapper {
+        width: 100%;
+        max-width: 1024px;
+        display: flex;
+        gap: 20px;
+
+        .hotelsSearch {
+            flex: 1;
+            background-color: orange;
+            padding: 10px;
+            border-radius: 10px;
+            position: sticky;
+            top: 10px;
+            height: max-content;
+
+
+
+            .isTitle {
+                font-size: 20px;
+                color: #555;
+                margin-bottom: 10px;
+            }
+
+            .isItems {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 10px;
+                position: relative;
+
+                .rangeCalender {
+                    position: absolute;
+                    z-index: 10;
+                    top: 60px;
+                }
+
+                .isOptions {
+                    padding: 10px;
+
+
+                    .isOptionItems {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        color: #555;
+                        font-size: 12px;
+
+                        .isOptionItemInput {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+
+            .isItems>label {
+                font-size: 12px;
+            }
+
+            .isItems>input {
+                height: 30px;
+                border: none;
+                padding: 5px;
+            }
+
+            .isItems>span {
+                height: 30px;
+                padding: 5px;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            .searchButton {
+                background-color: #0071c2;
+                padding: 10px;
+                color: #fff;
+                border: none;
+                width: 100%;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .hotelsSearchResult {
+            flex: 3;
+        }
+    }
+}
